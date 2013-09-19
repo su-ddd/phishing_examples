@@ -22,7 +22,6 @@ function phishing_examples_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -69,7 +68,7 @@ function phishing_examples_field_default_field_instances() {
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
