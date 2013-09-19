@@ -15,7 +15,7 @@ function phishing_examples_field_default_field_instances() {
     'bundle' => 'phishing_example',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Describe how someone could recognize this as a phishing attempt. Where links hidden in the email? Was the tone of the email urgent, requiring immediate action? Did it ask for a username and password, which IT Services would never ask for? Don\'t copy the text of the email in this field. Use the field above.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -33,9 +33,35 @@ function phishing_examples_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Description',
+    'label' => 'Description (Tips on How to recognize this example as a phishing attempt)',
     'required' => 0,
     'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'full_html' => 'full_html',
+          'phishing_email' => 'phishing_email',
+          'php_use_with_caution_' => 'php_use_with_caution_',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'phishing_email' => array(
+              'weight' => 0,
+            ),
+            'php_use_with_caution_' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
       'display_summary' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
@@ -44,11 +70,11 @@ function phishing_examples_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 20,
+        'rows' => 3,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -56,7 +82,7 @@ function phishing_examples_field_default_field_instances() {
   $field_instances['node-phishing_example-field_date'] = array(
     'bundle' => 'phishing_example',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Enter the approximate date the phishing email was first seen at Stanford.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -81,7 +107,7 @@ function phishing_examples_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_date',
     'label' => 'Date',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -111,7 +137,7 @@ function phishing_examples_field_default_field_instances() {
     'bundle' => 'phishing_example',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Copy and paste the text of the original phishing email here. Make sure to remove any links that could be followed by people, replacing them with [LINK REMOVED] or something similar.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -129,7 +155,7 @@ function phishing_examples_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_phishing_example_text',
-    'label' => 'Phishing Example Text',
+    'label' => 'Phishing Example - Text of Email',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -165,10 +191,10 @@ function phishing_examples_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'rows' => 10,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 2,
     ),
   );
 
@@ -176,7 +202,7 @@ function phishing_examples_field_default_field_instances() {
   $field_instances['node-phishing_example-field_phishing_screenshot'] = array(
     'bundle' => 'phishing_example',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Upload a screenshot of the email if it\'s a better way to show the phishing example.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -197,7 +223,7 @@ function phishing_examples_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_phishing_screenshot',
-    'label' => 'Screenshot',
+    'label' => 'Screenshot (Optional)',
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
@@ -255,16 +281,20 @@ function phishing_examples_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Copy and paste the text of the original phishing email here. Make sure to remove any links that could be followed by people, replacing them with [LINK REMOVED] or something similar.');
   t('Date');
-  t('Description');
-  t('Phishing Example Text');
-  t('Screenshot');
+  t('Describe how someone could recognize this as a phishing attempt. Where links hidden in the email? Was the tone of the email urgent, requiring immediate action? Did it ask for a username and password, which IT Services would never ask for? Don\'t copy the text of the email in this field. Use the field above.');
+  t('Description (Tips on How to recognize this example as a phishing attempt)');
+  t('Enter the approximate date the phishing email was first seen at Stanford.');
+  t('Phishing Example - Text of Email');
+  t('Screenshot (Optional)');
+  t('Upload a screenshot of the email if it\'s a better way to show the phishing example.');
 
   return $field_instances;
 }

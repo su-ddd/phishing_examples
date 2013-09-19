@@ -5,6 +5,7 @@ package = Stanford
 version = 7.x-1.0
 project = phishing_examples
 dependencies[] = admin_menu
+dependencies[] = announcements_and_emails
 dependencies[] = date
 dependencies[] = fe_block
 dependencies[] = filter
