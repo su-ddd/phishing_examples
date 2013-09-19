@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Phishing Examples feature.
+ */
+
+include_once 'phishing_examples.features.inc';
