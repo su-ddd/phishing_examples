@@ -39,7 +39,7 @@ function phishing_examples_views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<p>These are some examples of phishing emails seen on campus. Do NOT assume a suspect email is safe, just because it is not listed here. There are many variants of each, and new ones are being sent out each day.</p>';
+  $handler->display->display_options['header']['area']['content'] = '<p class="lead">These are some examples of phishing emails seen on campus. Do NOT assume a suspect email is safe, just because it is not listed here. There are many variants of each, and new ones are being sent out each day.</p>';
   $handler->display->display_options['header']['area']['format'] = 'full_html';
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
