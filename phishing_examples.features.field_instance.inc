@@ -22,6 +22,7 @@ function phishing_examples_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
