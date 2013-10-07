@@ -15,6 +15,7 @@ function phishing_examples_user_default_permissions() {
     'name' => 'create phishing_example content',
     'roles' => array(
       'Phishing Example Editor' => 'Phishing Example Editor',
+	  'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -24,6 +25,7 @@ function phishing_examples_user_default_permissions() {
     'name' => 'delete any phishing_example content',
     'roles' => array(
       'Phishing Example Editor' => 'Phishing Example Editor',
+	  'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -33,6 +35,7 @@ function phishing_examples_user_default_permissions() {
     'name' => 'delete own phishing_example content',
     'roles' => array(
       'Phishing Example Editor' => 'Phishing Example Editor',
+	  'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -42,6 +45,7 @@ function phishing_examples_user_default_permissions() {
     'name' => 'edit any phishing_example content',
     'roles' => array(
       'Phishing Example Editor' => 'Phishing Example Editor',
+	  'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -51,6 +55,7 @@ function phishing_examples_user_default_permissions() {
     'name' => 'edit own phishing_example content',
     'roles' => array(
       'Phishing Example Editor' => 'Phishing Example Editor',
+	  'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
