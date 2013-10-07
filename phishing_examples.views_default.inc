@@ -22,7 +22,7 @@ function phishing_examples_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Fraudulent phishing email - recent examples';
+  $handler->display->display_options['title'] = 'Recent examples of phishing';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
