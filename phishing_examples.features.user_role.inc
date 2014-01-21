@@ -13,7 +13,7 @@ function phishing_examples_user_default_roles() {
   // Exported role: Phishing Example Editor.
   $roles['Phishing Example Editor'] = array(
     'name' => 'Phishing Example Editor',
-    'weight' => 117,
+    'weight' => 119,
   );
 
   return $roles;
