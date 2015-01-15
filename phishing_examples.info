@@ -4,6 +4,7 @@ core = 7.x
 package = Stanford
 version = 7.x-1.0
 project = phishing_examples
+project status url = 'https://github.com/su-ddd/phishing_examples'
 dependencies[] = admin_menu
 dependencies[] = announcements_and_emails
 dependencies[] = date
